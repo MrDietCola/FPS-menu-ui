@@ -1,0 +1,13 @@
+main {
+  display: flex;
+  flex-grow: 1;
+}
+
+div {
+  width: 33%;
+}
+img {
+  height: 100vh;
+  object-fit: cover;
+  display: inline;
+}
