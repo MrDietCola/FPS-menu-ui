@@ -1,0 +1,136 @@
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: brightness(75%);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.804);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#btn-box {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+#title-box {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: 'Modern Warfare', sans-serif;
+  position: relative;
+}
+
+#section-title {
+  margin: 0; /* Remove margin from the h1 */
+  padding: 0; /* Remove padding from the h1 */
+  border-bottom: 2px solid white;
+  width: 80%;
+  color: white;
+  font-size: 45px;
+}
+
+#btn-box {
+  margin: 0 20px; /* Remove margin from the button container */
+  padding: 0; /* Remove padding from the button container */
+}
+
+#btn-box button {
+  padding: 15px;
+  flex-grow: 1;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+#btn-box button:hover {
+background-color: rgb(126, 124, 124);
+}
+
+#party-size, 
+#credits {
+  padding-right: 15px;
+  color: white;
+}
+
+#player-info-box {
+  position: absolute;
+  display: flex;
+  width: 40%;
+  top: 0;
+  right: 0;
+}
+
+#xp-box {
+  display: flex;
+  flex-grow: 1;
+}
+
+#xp-bar {
+  background-color: rgb(72, 72, 72);
+  height: 20px;
+  color: white;
+  flex-grow: 1;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#current-xp {
+  width: 65%;
+  background-color: rgba(136, 136, 136, 0.705);
+  color: transparent;
+  margin: 0;
+  padding: 1px 5px;
+}
+
+#rank {
+  color: white;
+  margin: 0;
+  padding: 0 15px;
+}
+
+main {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 30%;
+  height: calc(100vh - 160px);
+}
+
+main button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.603);
+  padding: 20px 0 20px 15px;
+  text-align: left;
+  font-family: 'Modern Warfare';
+  font-size: 24px;
+  color: white;
+  margin: 10px 0 0 30px;
+}
+
+main button span {
+font-family: sans-serif;
+font-size: 15px;
+display: none;
+}
+
+main button:hover {
+  background-color: rgb(126, 124, 124);
+}
+
+main button:hover span {
+  display: block;
+}
