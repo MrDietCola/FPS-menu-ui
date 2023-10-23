@@ -1,13 +1,110 @@
-main {
-  display: flex;
-  flex-grow: 1;
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
 }
 
-div {
-  width: 33%;
-}
-img {
+#test {
+  display: flex;
   height: 100vh;
+}
+
+#test div {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+/* #test img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  display: inline;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+div {
+  position: relative;
+}
+
+/* Add styles for the slider container */
+#middle {
+  display: flex;
+  align-items: center; /* Vertically center the image */
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Styles for the images inside the slider */
+#middle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 35% center; /* Set the object position to the left */
+}
+
+#right {
+  display: flex;
+  align-items: center; /* Vertically center the image */
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Styles for the images inside the slider */
+#right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 35% center; /* Set the object position to the left */
+}
+
+#middle {
+  display: flex;
+  align-items: center; /* Vertically center the image */
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Styles for the images inside the slider */
+#middle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 35% center; /* Set the object position to the left */
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+  align-items: start; /* Vertically center the image */
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Styles for the images inside the slider */
+#left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; /* Set the object position to the left */
+}
+
+img:hover {
+  filter: brightness(50%);
+}
+
+div h2 {
+  /* display: none; */
+ /* Styles for the <h2> headings */
+  position: absolute;
+  top: 50%; /* Vertically center the text */
+  left: 50%; /* Horizontally center the text */
+  transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+  color: white;
+  font-family: 'Modern Warfare';
+}
+
+img:hover div h2 {
+  display: block;
 }
