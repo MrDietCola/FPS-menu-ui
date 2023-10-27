@@ -1,13 +1,11 @@
 {
   "name": "fps-menu-ui",
   "version": "1.0.0",
-  "description": "https://mrdietcola.github.io/FPS-menu-ui/",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",

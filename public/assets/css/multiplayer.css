@@ -53,6 +53,7 @@ nav {
   background-color: transparent;
   color: white;
   border: none;
+  font-size: 18px;
 }
 
 #btn-box button:hover {
@@ -110,41 +111,40 @@ main {
   height: calc(100vh - 160px);
 }
 
-/* Existing styles for your main button */
 main button {
   border: none;
   background-color: rgba(0, 0, 0, 0.603);
-  padding: 20px 0 20px 15px;
+  padding: 20px 0 20px 50px;
   text-align: left;
   font-family: 'Modern Warfare';
   font-size: 24px;
   color: white;
   margin: 10px 0 0 30px;
-  height: 60px; /* Set a default height */
-  transition: 0.25s; /* Add a smooth transition for the height */
+  height: 100px; 
+  transition: 0.25s; 
+  position: relative;
 }
 
-/* Existing styles for your main button span */
 main button span {
   font-family: sans-serif;
   font-size: 15px;
-  display: none;
-  transition: .5s;
+  display: block; /* Show the span by default */
+  opacity: 0; /* Hide the span */
+  transition: opacity 0.25s; /* Add a smooth opacity transition */
+  position: absolute;
+  top: 25%; /* Adjust as needed */
+  right: 0;
+  width: 45%;
+  padding-right: 60px;
 }
 
 /* Add a hover effect to change the button height */
 main button:hover {
   background-color: rgb(126, 124, 124);
-  height: 130px; /* Adjust the height on hover */
+  height: 140px; /* Adjust the height on hover */
 }
 
 /* Adjust the span's display on hover */
 main button:hover span {
-  display: block;
-}
-
-
-
-main button:hover span {
-  display: block;
+  opacity: 1;
 }
