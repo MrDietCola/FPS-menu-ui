@@ -107,8 +107,9 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  width: 30%;
+  width: 35%;
   height: calc(100vh - 160px);
+  position: relative;
 }
 
 main button {
@@ -117,7 +118,7 @@ main button {
   padding: 20px 0 20px 50px;
   text-align: left;
   font-family: 'Modern Warfare';
-  font-size: 24px;
+  font-size: 22px;
   color: white;
   margin: 10px 0 0 30px;
   height: 100px; 
@@ -135,7 +136,7 @@ main button span {
   top: 25%; /* Adjust as needed */
   right: 0;
   width: 45%;
-  padding-right: 60px;
+  padding-right: 30px;
 }
 
 /* Add a hover effect to change the button height */
